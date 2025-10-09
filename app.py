@@ -132,7 +132,6 @@ def excluir_livro(id):
 
 
 @app.route('/livros/editar/<int:id>', methods=['GET', 'POST'])
-@login_required
 def editar_livro(id):
     if request.method == 'POST':
         titulo = request.form['titulo']
